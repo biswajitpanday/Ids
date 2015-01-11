@@ -1,0 +1,89 @@
+CREATE TABLE idsUser
+(
+userId INTEGER NOT NULL,
+userName VARCHAR(255) NOT NULL,
+phoneNo VARCHAR(20) NOT NULL,
+userEmail VARCHAR(100) NOT NULL,
+userPassword VARCHAR(32) NOT NULL,
+gender CHAR(6),
+designation VARCHAR(100),
+bloodGroup CHAR(5),
+address VARCHAR(255) NOT NULL,
+userType INT
+);
+
+ALTER TABLE idsUser ADD (
+  CONSTRAINT userId PRIMARY KEY (userId));
+
+CREATE SEQUENCE user_seq;
+
+CREATE OR REPLACE TRIGGER user_bir
+BEFORE INSERT ON idsUser
+FOR EACH ROW
+
+BEGIN
+  SELECT user_seq.NEXTVAL
+  INTO   :new.userId
+  FROM   dual;
+END;
+/
+
+--------------------------------------------------
+
+CREATE TABLE idsOrder
+(
+orderId INTEGER NOT NULL,
+orderDate DATE NOT NULL,
+deliveryDate DATE NOT NULL,
+status VARCHAR(20),
+userId INTEGER NOT NULL,
+FOREIGN KEY(userId) REFERENCES idsUser(userId)
+);
+
+ALTER TABLE idsOrder ADD (
+  CONSTRAINT orderId PRIMARY KEY (orderId));
+
+CREATE SEQUENCE order_seq;
+
+CREATE OR REPLACE TRIGGER order_bir
+BEFORE INSERT ON idsOrder
+FOR EACH ROW
+
+BEGIN
+  SELECT order_seq.NEXTVAL
+  INTO   :new.orderId
+  FROM   dual;
+END;
+/
+
+--------------------------------------------------
+
+CREATE TABLE idsProduct
+(
+productCode INTEGER NOT NULL,
+productName VARCHAR(255) NOT NULL,
+productType VARCHAR(255) NOT NULL,
+price NUMBER NOT NULL,
+quantity INTEGER NOT NULL,
+feature VARCHAR(100),
+orderId	INTEGER NOT NULL,
+FOREIGN KEY(orderId) REFERENCES idsOrder(orderId)
+);
+
+ALTER TABLE idsProduct ADD (
+  CONSTRAINT productCode PRIMARY KEY (productCode));
+
+CREATE SEQUENCE product_seq;
+
+CREATE OR REPLACE TRIGGER product_bir
+BEFORE INSERT ON idsProduct
+FOR EACH ROW
+
+BEGIN
+  SELECT product_seq.NEXTVAL
+  INTO   :new.productCode
+  FROM   dual;
+END;
+/
+
+--------------------------------------------------

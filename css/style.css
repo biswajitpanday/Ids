@@ -87,7 +87,7 @@ img {
 .page-title h1{
 	font-size: 49px; /*line-height is 54px = 3x18px*/
 	margin-bottom: 9px; /*9px of underline + 9px = 18px*/
-	margin-top: 18px; 
+	margin-top: 18px;
 	}
 @media screen and (max-width:768px){
 	.smxs-margin{
