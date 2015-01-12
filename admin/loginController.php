@@ -36,7 +36,7 @@
 		}
     	if($row == '') {
     		$msg = "UserName Or Password Mismatch!";
-    		header("Location: http://localhost/ids/admin/login.php?msg=$msg");
+    		header("Location: http://localhost/ids/admin/index.php?msg=$msg");
     		die();	
     	}
 
