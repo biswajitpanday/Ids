@@ -28,35 +28,7 @@ BEGIN
 END;
 /
 
---------------------------------------------------
-
-CREATE TABLE idsOrder
-(
-orderId INTEGER NOT NULL,
-orderDate DATE NOT NULL,
-deliveryDate DATE NOT NULL,
-status VARCHAR(20),
-userId INTEGER NOT NULL,
-FOREIGN KEY(userId) REFERENCES idsUser(userId)
-);
-
-ALTER TABLE idsOrder ADD (
-  CONSTRAINT orderId PRIMARY KEY (orderId));
-
-CREATE SEQUENCE order_seq;
-
-CREATE OR REPLACE TRIGGER order_bir
-BEFORE INSERT ON idsOrder
-FOR EACH ROW
-
-BEGIN
-  SELECT order_seq.NEXTVAL
-  INTO   :new.orderId
-  FROM   dual;
-END;
-/
-
---------------------------------------------------
+=====================================================
 
 CREATE TABLE idsProduct
 (
@@ -66,9 +38,7 @@ productType VARCHAR(255) NOT NULL,
 price NUMBER NOT NULL,
 quantity INTEGER NOT NULL,
 feature VARCHAR(100),
-imageUrl VARCHAR(255),
-orderId	INTEGER NOT NULL,
-FOREIGN KEY(orderId) REFERENCES idsOrder(orderId)
+imageUrl VARCHAR(255)
 );
 
 ALTER TABLE idsProduct ADD (
@@ -87,4 +57,35 @@ BEGIN
 END;
 /
 
---------------------------------------------------
+=====================================================
+
+CREATE TABLE idsOrder
+(
+orderId INTEGER NOT NULL,
+orderDate DATE NOT NULL,
+deliveryDate DATE NOT NULL,
+status VARCHAR(20),
+userId INTEGER NOT NULL,
+productId INTEGER NOT NULL,
+FOREIGN KEY(userId) REFERENCES idsUser(userId),
+FOREIGN KEY(productId) REFERENCES idsUser(userId)
+);
+
+ALTER TABLE idsOrder ADD (
+  CONSTRAINT orderId PRIMARY KEY (orderId));
+
+CREATE SEQUENCE order_seq;
+
+CREATE OR REPLACE TRIGGER order_bir
+BEFORE INSERT ON idsOrder
+FOR EACH ROW
+
+BEGIN
+  SELECT order_seq.NEXTVAL
+  INTO   :new.orderId
+  FROM   dual;
+END;
+/
+
+====================================
+
