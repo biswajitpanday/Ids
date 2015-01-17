@@ -6,7 +6,7 @@
 	position: absolute;
 	font-size: 30px;
 	top: 100px;
-	left: 100px;
+	left: 160px;
 	width: 250px;
 	height: 230px;
 	text-align: center;
@@ -18,8 +18,9 @@
 }
 #selectImage {
 	bottom: 0px;
-	width: 414px;
+	width: 100%;
 	background-color: #FEFFED;
+	text-align: center;
 }
 .submit {
 	font-size: 16px;
@@ -33,11 +34,11 @@
 	padding: 10px 0;
 	outline: none;
 	margin-top: 20px;
-	margin-left: 30%;
 }
 .submit:hover {
 	background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 }
+
 #file {
 	color: red;
 	padding: 5px;
@@ -74,4 +75,6 @@
 
 .msg-pane-height {
 	height: 69px;
+	text-align: center;
+	line-height: 42px;
 }
