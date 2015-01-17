@@ -7,7 +7,6 @@
 		$dbUser = "system";
 		$dbpass = "Cse440033";
 		$db = "localhost:1521/orcl";
-
 		$msg = '';
 
 		//Connect to DB

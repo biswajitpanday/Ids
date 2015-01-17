@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	setTimeout(function() {
-		$('.message').empty();
+		$('#gritter-notice-wrapper,.message').empty();
 	}, 3000);
 		
 });
