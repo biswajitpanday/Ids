@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
 
     <script src="assets/js/chart-master/Chart.js"></script>
-    <script type="text/javascript" src="../../js/scripts.js"></script>
+    
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -304,20 +304,30 @@
                         <div class="cos-sm-3"> <input type="text" name="prName" class="form-control" required> </div>
 
                         <label class="col-sm-4 col-sm-4 control-label">Product Type </label>
-                        <div class="cos-sm-3"> <input type="text" name="prType" class="form-control" required> </div>
+                        <!-- <div class="cos-sm-3"> <input type="text" name="prType" class="form-control" required> </div> -->
+                        <div class="cos-sm-3"> 
+                          <select name="prType" class="form-control">
+                            <option> Almira </option>
+                            <option> Bed </option>
+                            <option> Table </option>
+                            <option> Showcase </option>
+                            <option> Sofa </option>
+                          </select>
+                        </div>
 
                         <label class="col-sm-2 col-sm-2 control-label">Price </label>
-                        <div class="cos-sm-3"> <input type="text" name="prPrice" class="form-control" required> </div>
+                        <div class="cos-sm-3"> <input type="number" name="prPrice" class="form-control" required> </div>
 
                         <label class="col-sm-2 col-sm-2 control-label">Quantity </label>
-                        <div class="cos-sm-3"> <input type="text" name="prQuantity" class="form-control" required> </div>
+                        <div class="cos-sm-3"> <input type="number" name="prQuantity" class="form-control" required> </div>
 
                         <label class="col-sm-2 col-sm-2 control-label">Feature </label>
                         <div class="cos-sm-3"> <input type="text" name="prFeature" class="form-control" required> </div>
                     </div>
 
-                    <div class="showback">
-                        msg...
+                    <div class="showback msg-pane-height">
+                        <h4 id='loading' >loading..</h4>
+                        <span id="message"></span>
                     </div>
 
                 </div>
@@ -335,16 +345,22 @@
                             <div id="selectImage">
                                 <label>Select Your Image</label><br/>
                                 <input type="file" name="file" id="file" required />
-                                <input type="submit" value="Upload" class="submit" />
+                                <!-- <input type="submit" value="Upload" class="submit" /> -->
                             </div>
-                        </form>
+                        <!-- </form> -->
                     </div>
 
-                    <div class="showback"> 
+                    <!-- <div class="showback"> 
                         <h4 id='loading' >loading..</h4>
                         <span id="message"></span>
-                    </div> 
+                    </div>  -->
                 </div>
+                
+                <div class="showback col-lg-12 col-md-12 col-sm-12">
+                  <input type="submit" value="Upload" class="submit" />
+                </div>
+
+                </form>
                 <!-- Image Upload Ends -->
 
 
@@ -756,6 +772,7 @@
 <script src="assets/js/sparkline-chart.js"></script>    
 <script src="assets/js/zabuto_calendar.js"></script>
 <script src="assets/js/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../js/scripts.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function () {
