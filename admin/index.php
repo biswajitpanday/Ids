@@ -28,8 +28,6 @@
                     </div>
                     <div class="links span8">
                         <a class="home" href="http://localhost/ids" rel="tooltip" data-placement="bottom" data-original-title="Home"></a>
-                        <!-- <a class="blog" href="http://blog.gravitybd.com/" rel="tooltip" data-placement="bottom" data-original-title="Blog"></a>
-                        <a class="family" href="http://gravitybd.com/family/" rel="tooltip" data-placement="bottom" data-original-title="Family"></a> -->
                     </div>
                 </div>
             </div>
@@ -43,10 +41,6 @@
                 <div class="register span6">
                     <form action="http://localhost/ids/admin/loginController.php" method="post">
                         <h2><span class="red"><strong>Admin Login Form</strong></span></h2>
-                        <!-- <label for="firstname">UserName </label>
-                        <input type="text" id="firstname" name="email" placeholder="Enter Your Email Here">
-                        <label for="lastname">LATITUDE</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="enter latitude..."> -->
                         <label for="username">
                             <span class="message" style = "color: red;"> 
                                 <?php
@@ -56,8 +50,6 @@
                                 ?> 
                             </span>
                         </label>
-                        <!-- <input type="text" id="username" name="username" placeholder="enter longitude..."> -->
-                        
                         <label for="email">User Name </label>
                         <input type="text" id="email" name="email" placeholder="Enter Your Email Here">
                         <label for="password">Password </label>

@@ -456,6 +456,12 @@
 						<span class="underline green"></span>
 					</div>				
 				</div>	
+
+				<?php 
+					include "homeController.php";
+					getProducts(35, "getProducts");
+				?>
+
 				<div class="green animated-fade">
 					<div class="portfolioFilter text-center uppercase">
 						<span>Filter:</span>
@@ -466,6 +472,7 @@
 						<a href="#" data-filter=".offices">Showcase</a>
 						<a href="#" data-filter=".outdoors">Sofa</a>
 					</div>
+
 					<div id="container" class="portfolioContainer text-center">  
 						<div class="kitchen">        
 							<div class="isotope-img">

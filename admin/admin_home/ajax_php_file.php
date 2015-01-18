@@ -1,5 +1,5 @@
 <?php
-
+	/*===== Product Upload Start =====*/
 	$productName = $_POST["prName"];
 	$productType = $_POST["prType"];
 	$productPrice = $_POST["prPrice"];
@@ -33,8 +33,8 @@
 						$image_path_with_file_name = "/upload/" . $image_name; 
 
 						$prouucts = array($productName, $productType, $productPrice, $productQuantity, $productFeature, $image_path_with_file_name);
-						include 'connection_query.php';
-						executequery($prouucts, "productInsert");
+						include 'adminController.php';
+						saveProducts($prouucts, "productInsert");
 						echo "<span id='success'>Product Uploaded Successfully...!!</span><br/>";	
 					}
 					//echo "<span id='success'>Error...!! Please Try Again Later...!</span><br/>";		
@@ -45,4 +45,9 @@
 			echo "<span id='invalid'>***Invalid file Size or Type***<span>";
 		}
 	}
+	/*===== Product Upload End =====*/
+
+
+
+
 ?>
