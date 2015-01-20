@@ -10,7 +10,7 @@
 		$validextensions = array("jpeg", "jpg", "png");
 		$temporary = explode(".", $_FILES["file"]["name"]);
 		$file_extension = end($temporary);
-		if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && ($_FILES["file"]["size"] < 100000)//Approx. 100kb files can be uploaded.
+		if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && ($_FILES["file"]["size"] < 1000000)//Approx. 1000kb files can be uploaded.
 			&& in_array($file_extension, $validextensions)) {
 			if ($_FILES["file"]["error"] > 0) {
 				echo "Return Code: " . $_FILES["file"]["error"] . "<br/><br/>";
@@ -30,7 +30,7 @@
 
 					if(isset($productName) && isset($productType) && isset($productPrice) && isset($productQuantity) && isset($productFeature) && isset($move_success)) {
 						$image_name = substr($targetPath, 13);
-						$image_path_with_file_name = "/upload/" . $image_name; 
+						$image_path_with_file_name = "upload/" . $image_name; 
 
 						$prouucts = array($productName, $productType, $productPrice, $productQuantity, $productFeature, $image_path_with_file_name);
 						include 'adminController.php';

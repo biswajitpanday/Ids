@@ -1889,3 +1889,6 @@ tbody td{
 .table-body .description{
 	font-size:12px;
 	}
+.isotope-img img{
+	height: 219px;
+}

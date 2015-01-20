@@ -457,10 +457,7 @@
 					</div>				
 				</div>	
 
-				<?php 
-					include "homeController.php";
-					getProducts(35, "getProducts");
-				?>
+				
 
 				<div class="green animated-fade">
 					<div class="portfolioFilter text-center uppercase">
@@ -474,79 +471,18 @@
 					</div>
 
 					<div id="container" class="portfolioContainer text-center">  
-						<div class="kitchen">        
-							<div class="isotope-img">
-								<img src="images/kitchen_bath1.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/kitchen_bath1.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Kitchen & Bath</p>
-								<h6 class="tile-bg-title colored-text">"Dolphin"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et.</p>									
-							</div>
-						</div>
-						<div class="offices">                
-							<div class="isotope-img">
-								<img src="images/offices1.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/offices1.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Offices</p>
-								<h6 class="tile-bg-title colored-text">"Angelo"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
-							</div>
-						</div>
-						<div class="livingrooms">    
-							<div class="isotope-img">
-								<img src="images/livingroom2.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/livingroom2.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Living Rooms</p>
-								<h6 class="tile-bg-title colored-text">"Marina"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
-							</div>
-						</div>
-						<div class="kitchen">                
-							<div class="isotope-img">
-								<img src="images/kitchen_bath2.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/kitchen_bath2.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Kitchen & Bath</p>
-								<h6 class="tile-bg-title colored-text">"Shark"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
-							</div>
-						</div>
-						<div class="beedrooms">        
-							<div class="isotope-img">
-								<img src="images/bedroom1.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/bedroom1.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Bedrooms</p>
-								<h6 class="tile-bg-title colored-text">"Moon"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
-							</div>
-						</div>
-						<div class="outdoors">                
-							<div class="isotope-img">
-								<img src="images/outdoors1.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/outdoors1.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Outdoors</p>
-								<h6 class="tile-bg-title colored-text">"Forest"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
-							</div>
-						</div>
-						<div class="livingrooms">                
-							<div class="isotope-img">
-								<img src="images/livingroom1.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/livingroom1.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Living Rooms</p>
-								<h6 class="tile-bg-title colored-text">"Jenny"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
-							</div>
-						</div>
+					<?php 
+						include "homeController.php";
+						$products = getProducts("getProducts");
+						foreach($products as $img) { ?>
+
 						<div class="beedrooms">                
 							<div class="isotope-img">
-								<img src="images/bedroom2.jpg" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/><div class="isotope-overlay"><a class="image-link" href="images/bedroom2.jpg"><i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a></div>
+								<img src="<?php echo $img; ?>" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
+								<div class="isotope-overlay">
+									<a class="image-link" href="<?php echo $img; ?>">
+									<i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a>
+								</div>
 							</div>
 							<div class="isotope-description">
 								<p class="product-type uppercase">Bedrooms</p>
@@ -554,6 +490,8 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
 							</div>
 						</div>
+
+						<?php } ?>
 					</div>
 				</div>
 			</div>
