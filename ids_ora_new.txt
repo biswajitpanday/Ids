@@ -38,7 +38,7 @@ productType VARCHAR(255) NOT NULL,
 price NUMBER NOT NULL,
 quantity INTEGER NOT NULL,
 feature VARCHAR(100),
-imageUrl VARCHAR(255)
+imageUrl VARCHAR(255),
 );
 
 ALTER TABLE idsProduct ADD (
