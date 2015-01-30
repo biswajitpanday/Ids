@@ -392,3 +392,89 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+
+
+
+/* Order Pop Up ==================================*/
+
+#mainform{
+width:960px;
+margin:20px auto;
+padding-top:20px;
+display:block;
+}
+h2{
+margin-left: 65px;
+text-shadow:1px 0px 3px gray;
+}
+h3{
+font-size:18px;
+text-align:center;
+text-shadow:1px 0px 3px gray;
+}
+b{
+font-size:18px;
+text-shadow:1px 0px 3px gray;
+}
+#popup{
+padding-top:80px;
+}
+.form{
+border-radius:2px;
+padding:20px 30px;
+box-shadow:0 0 15px;
+font-size:14px;
+font-weight:bold;
+width:350px;
+margin:20px 250px 0 35px;
+float:left;
+background-color: #fff;
+}
+#order input{
+width:100%;
+height:35px;
+margin-top:5px;
+border:1px solid #999;
+border-radius:3px;
+padding:5px;
+color: #000;
+}
+input[type=button]{
+background-color:#123456;
+border:1px solid white;
+font-family: 'Fauna One', serif;
+font-Weight:bold;
+font-size:18px;
+color:white;
+width:49%;
+}
+
+#contactdiv{
+opacity:0.92;
+position: absolute;
+z-index: 99;
+width: 100%;
+display: none;
+}
+
+.img{
+float: right;
+margin-top: -35px;
+margin-right: -37px;
+}
+#order{
+left: 61%;
+top: 50%;
+margin-left: 37%;
+}
+#order textarea{
+width:100%;
+height:80px;
+margin-top:5px;
+border-radius:3px;
+padding:5px;
+resize:none;
+color:#000;
+}
+/* Order Pop Up ==================================*/
