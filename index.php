@@ -333,47 +333,28 @@
 						</div>																		
 					</div>
 				</div>						
-				<!-- PROJECT LIST -->
+				<!-- PRODUCT LIST -->
 				<div class="project-list">
 					<div class="project_top bot_angle_right"></div>	
 					<div class="white">					
 						<div class="title page-title text-center colored-text">
-							<h1 class="light-text">Project List</h1>
+							<h1 class="light-text">Product List</h1>
 							<span class="underline white"></span>
 						</div>									
 					</div>
 					<div class="caroufred green pad-bot animated-fade">
 						<ul class="project-list-gallery">               					
+						<?php 
+							require_once "homeController.php";
+							$listProducts = getListProducts();
+							foreach($listProducts as $product) { ?>
+
 							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Springer Center Food Court, NM State University; Las Cruces, NM" data-original-title="Educational"><img src="images/kitchen_bath1.jpg" alt="img"/></a>
+								<a href="#" class="project-popover" data-content="<?php echo $product[1];?>" data-original-title="<?php echo $product[5];?>">
+								<img src="<?php echo $product[6]; ?>" alt="img"/></a>
 							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Corbett Square; Albuquerque, NM " data-original-title="Commercial"><img src="images/livingroom1.jpg" alt="img" /></a>
-							</li>
-							<li class="project-list-item">
-									<a href="#" class="project-popover" data-content="Radisson Inn, Brunswick, GA " data-original-title="Hospitality"><img src="images/livingroom2.jpg" alt="img"  /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Primrose residence; Las Campanas, NM" data-original-title="Residential"><img src="images/kitchen_bath2.jpg" alt="img" /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Calvani Pueblo Travel Center; Tesuque, NM " data-original-title="Commercial"><img src="images/bedroom1.jpg" alt="img" /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Nambe Residence; Los Ranchos, NM" data-original-title="Residential"><img src="images/bedroom2.jpg" alt="img" /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Highlands University Dining Hall; Las Vegas, NM" data-original-title="Educational"><img src="images/outdoors1.jpg" alt="img"  /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Brunswick Whittier; Whittier, CA " data-original-title="Hospitality"><img src="images/offices1.jpg" alt="img" /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Axel Hair Studio; Santa Fe, NM" data-original-title="Commercial"><img src="images/company1.jpg" alt="img" /></a>
-							</li>
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="Camps residence; Los Cerrillos, NM" data-original-title="Residential"><img src="images/magazine1.jpg" alt="img" /></a>
-							</li>					
+
+						<?php };?>
 						</ul>
 						<div id="caroufred_project_list_gallery" class="carousel_pagination left"></div>		
 					</div>
@@ -458,46 +439,70 @@
 				</div>	
 
 				
+				<div id="contactdiv" style="display: none">
+					<form class="form" action="#" id="order">
+						<img src="images/button_cancel.png" class="img" id="cancel"/>
+						<h3>Order Form</h3>
+						<span id="productImage"></span>
+						<label>Name: <span>*</span></label>
+						<input type="text" id="name" placeholder="Name"/>
+						<label>Email: <span>*</span></label>
+						<input type="text" id="email" placeholder="Email"/>
+						<label>Contact No: <span>*</span></label>
+						<input type="text" id="contactno" placeholder="11 digit Mobile no."/>
+						<label>Message:</label>
+						<textarea id="message" placeholder="Message......."></textarea>
+						<input type="button" id="orderNow" value="Confirm"/>
+						<input type="button" id="cancel" value="Cancel"/>
+						<br/>
+					</form>
+				</div>
+
+
 
 				<div class="green animated-fade">
 					<div class="portfolioFilter text-center uppercase">
 						<span>Filter:</span>
 						<a href="#" data-filter="*" class="current">All</a>
-						<a href="#" data-filter=".kitchen">Almira</a>
-						<a href="#" data-filter=".livingrooms">Bed</a>
-						<a href="#" data-filter=".beedrooms">Table</a>
-						<a href="#" data-filter=".offices">Showcase</a>
-						<a href="#" data-filter=".outdoors">Sofa</a>
+						<a href="#" data-filter=".Almira">Almira</a>
+						<a href="#" data-filter=".Bed">Bed</a>
+						<a href="#" data-filter=".Table">Table</a>
+						<a href="#" data-filter=".Showcase">Showcase</a>
+						<a href="#" data-filter=".Sofa">Sofa</a>
 					</div>
 
 					<div id="container" class="portfolioContainer text-center">  
 					<?php 
-						include "homeController.php";
-						$products = getProducts("getProducts");
-						foreach($products as $img) { ?>
+						require_once "homeController.php";
+						$products = getGalleryProducts();
+						foreach($products as $item) { ?>
 
-						<div class="beedrooms">                
+						<div class="<?php echo $item[2];?>">
 							<div class="isotope-img">
-								<img src="<?php echo $img; ?>" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
+								<img src="<?php echo $item[6]; ?>" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
 								<div class="isotope-overlay">
-									<a class="image-link" href="<?php echo $img; ?>">
+									<a class="image-link" href="<?php echo $item[6]; ?>">
 									<i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a>
 								</div>
 							</div>
 							<div class="isotope-description">
-								<p class="product-type uppercase">Bedrooms</p>
-								<h6 class="tile-bg-title colored-text">"Dreamy"</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et. </p>									
+								<p class="product-type uppercase">Price : <?php echo $item[3];?> BDT</p>
+								<h6 class="tile-bg-title colored-text">Name : <?php echo $item[1];?></h6>
+								<p>Featrue : <?php echo $item[2];?></p>
+								<div class="btn-wrapper">
+									<input type="button" value="Order Now" onclick="ajax.order(<?php echo $item[0]?>)" class="uppercase btn btn-primary btn-large btn-input" id="sendcon">
+								</div>
 							</div>
 						</div>
-
 						<?php } ?>
 					</div>
 				</div>
+
 			</div>
 			<div class="portfolio_bottom bot_angle_left blue-bg"></div>
 		</div>		
-		<!-- END OF projects -->		
+		<!-- END OF projects -->
+
 		<!-- CONTACT -->
 		<div id="contact" class="main-section not-home green">	
 			<div class="contact pad-bot blue-bg">
@@ -534,6 +539,7 @@
 							<a href="http://www.google.com/"><i class="icon-google-plus"></i></a>																							
 						</div>
 					</div>
+
 					<!-- CONTACT FORM -->
 					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 animated-fade">
 						<form method="post" class="contact-form">
@@ -545,10 +551,12 @@
 							</fieldset>	
 						</form>		
 					</div>
+
 				</div>																																					
 			</div>
 		</div>
-		<!-- END OF contact -->		
+		<!-- END OF contact -->	
+
 		<div class="copyright green-bg">
 			<div class="contact_bottom bot_angle_right"></div>
 			<div class="container blue">				
@@ -594,8 +602,8 @@
 
 	<!-- Contact Form -->
    	<script>   
-	   	var ajax = {		
-		   	send: function() {				
+	   	var ajax = {
+		   	send: function() {
 				var userName = $("input[id=namecon]").val();
 				var userEmail = $("input[id=emailcon]").val();
 				var userComments = $("textarea[id=commentcon]").val();
@@ -613,15 +621,45 @@
 							ajax.SetText("Submit");
 							alert(data);	
 						}
-						
-						
 					});
 				}
 		   	},
-		   	   	SetText: function(text) {
-			   	   	$("input[id=sendcon]").val(text);
-		   	   	}
-	   	   }	
+	   	   	SetText: function(text) {
+		   	   	$("input[id=sendcon]").val(text);
+	   	   	},
+	   	   	order: function(productCode) {
+	   	   		$.ajax({
+		   	   		data: 'orderid=' + productCode,
+				    url: 'singleProductController.php',
+				    method: 'POST',
+				    success: function(data) {
+				    	
+						$("#contactdiv").css("display", "block");
+						$("#order #cancel").click(function() {
+							$(this).parent().parent().hide();
+						});
+
+						var img = $('<img />');
+							img.attr('src', data);
+							img.attr('width', 290);
+               				img.attr('height', 200);
+               				$('#productImage').html(img);
+
+               			$("#orderNow").click(function() {
+               				var name = $("#name").val();
+	               			var email = $("#email").val();
+	               			var contactNo = $("#contactno").val();
+	               			var message = $("#message").val();
+	               			alert(name + " --- " + email + " --- " + contactNo + " --- " + message + " " + productCode);
+               			});
+               			
+							
+
+				    }
+		   	   	});
+		   	}
+
+   	    };
    	</script>		
 </body>
 </html>
