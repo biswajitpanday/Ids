@@ -23,6 +23,7 @@
 	<!-- PRELOADER -->
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
+        <div id="status">&nbsp;</div>
 	</div>
 	<!-- HOME -->
 	<div id="home">
@@ -36,31 +37,67 @@
 			<div class="caroufred green">
 				<ul class="gallery uppercase">
 					<li>	
-						<img src="images/kitchen_bath1.jpg" alt="img"/> 
+						<img src="images/img/kitchen.jpg" alt="img"/> 
 						<div class="home-overlay colored-text text-center blue">
-							<h4><span>Kitchen & Bath</span></h4>
+							<h4><span>Kitchen</span></h4>
 						</div>
 					</li>
 					<li>
-						<img src="images/livingroom2.jpg" alt="img"/> 
+						<img src="images/img/living.jpg" alt="img"/> 
 						<div class="home-overlay colored-text text-center">
 							<h4><span>Living Rooms</span></h4>
 						</div>							
 					</li>
 					<li>
-						<img src="images/bedroom2.jpg" alt="img"/> 
+						<img src="images/img/bed.jpg" alt="img"/> 
 						<div class="home-overlay colored-text text-center">
-							<h4><span>Bedrooms</span></h4>	
+							<h4><span>Bed rooms</span></h4>	
 						</div>						
 					</li>
 					<li>
-						<img src="images/outdoors1.jpg" alt="img"/> 
+						<img src="images/img/veranda.jpg" alt="img"/> 
 						<div class="home-overlay colored-text text-center">
 							<h4><span>Outdoors</span></h4>		
 						</div>					
 					</li>
+                    <li>
+						<img src="images/img/corridor.jpeg" alt="img"/> 
+						<div class="home-overlay colored-text text-center">
+							<h4><span>Corridor</span></h4>		
+						</div>					
+					</li>
+                    <li>
+						<img src="images/img/dinning.jpg" alt="img"/> 
+						<div class="home-overlay colored-text text-center">
+							<h4><span>Dining rooms</span></h4>		
+						</div>					
+					</li>
+                    <li>
+						<img src="images/img/hall.jpg" alt="img"/> 
+						<div class="home-overlay colored-text text-center">
+							<h4><span>Halls</span></h4>		
+						</div>					
+					</li>
+                    <li>
+						<img src="images/img/kd.jpg" alt="img"/> 
+						<div class="home-overlay colored-text text-center">
+							<h4><span>Kitchen Come Dining</span></h4>		
+						</div>					
+					</li>
+                    <li>
+						<img src="images/img/kids.jpg" alt="img"/> 
+						<div class="home-overlay colored-text text-center">
+							<h4><span>Kids room</span></h4>		
+						</div>					
+					</li>
+                    <li>
+						<img src="images/img/bath.jpg" alt="img"/> 
+						<div class="home-overlay colored-text text-center">
+							<h4><span>Bath</span></h4>		
+						</div>					
+					</li>
 					<li>
-						<img src="images/offices1.jpg" alt="img"/> 
+						<img src="images/img/office.jpg" alt="img"/> 
 						<div class="home-overlay colored-text text-center">
 							<h4><span>Offices</span></h4>	
 						</div>						
@@ -113,12 +150,12 @@
 								<span>Contact</span>
 							</a>
 						</li>
-						<li>
+					<!--	<li>
 							<a href="components.html" class="colored-text">
 								<i class="icon-circle"></i> 
 								<span>Components</span>
 							</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>			
 			</nav>
@@ -344,17 +381,7 @@
 					</div>
 					<div class="caroufred green pad-bot animated-fade">
 						<ul class="project-list-gallery">               					
-						<?php 
-							require_once "homeController.php";
-							$listProducts = getListProducts();
-							foreach($listProducts as $product) { ?>
-
-							<li class="project-list-item">
-								<a href="#" class="project-popover" data-content="<?php echo $product[1];?>" data-original-title="<?php echo $product[5];?>">
-								<img src="<?php echo $product[6]; ?>" alt="img"/></a>
-							</li>
-
-						<?php };?>
+					<!-- Product list here....................................................................... -->
 						</ul>
 						<div id="caroufred_project_list_gallery" class="carousel_pagination left"></div>		
 					</div>
@@ -472,29 +499,7 @@
 					</div>
 
 					<div id="container" class="portfolioContainer text-center">  
-					<?php 
-						require_once "homeController.php";
-						$products = getGalleryProducts();
-						foreach($products as $item) { ?>
-
-						<div class="<?php echo $item[2];?>">
-							<div class="isotope-img">
-								<img src="<?php echo $item[6]; ?>" alt="image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
-								<div class="isotope-overlay">
-									<a class="image-link" href="<?php echo $item[6]; ?>">
-									<i class="icon-eye-open tips" data-placement="top" data-toggle="tooltip" title="Click to Zoom"></i></a>
-								</div>
-							</div>
-							<div class="isotope-description">
-								<p class="product-type uppercase">Price : <?php echo $item[3];?> BDT</p>
-								<h6 class="tile-bg-title colored-text">Name : <?php echo $item[1];?></h6>
-								<p>Featrue : <?php echo $item[2];?></p>
-								<div class="btn-wrapper">
-									<input type="button" value="Order Now" onclick="ajax.order(<?php echo $item[0]?>)" class="uppercase btn btn-primary btn-large btn-input" id="sendcon">
-								</div>
-							</div>
-						</div>
-						<?php } ?>
+				<!--	Product Details with order here........................................	-->
 					</div>
 				</div>
 
