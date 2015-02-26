@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Style Interior</title>
+	<title>"D"Interiors</title>
 	<link rel="icon" type="image/ico" href="images/favicon.ico">
 	<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
 	<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->	
@@ -177,8 +177,7 @@
 			</div>
 			<div class="container text-center pad-bot about-description">				
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animated-scale-up">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-					</p>
+					<p>.</p>
 				</div>
 			</div>
 			<div class="container pad-bot highlighted">	
@@ -188,7 +187,7 @@
 							<i class="icon-ok"></i>
 						</div>
 					</div>
-					<h6><span class="highlights-first">Innovative</span><span>Design</span></h6>
+					<h6><a href="details1.html" target="_blank"><span class="highlights-first">Innovative</span><span>Design</span></a></h6>
 				</div>	
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 highlights animated-slide-top">
 					<div class="about-overlay-under text-center">
@@ -196,7 +195,7 @@
 							<i class="icon-ok"></i>
 						</div>
 					</div>
-					<h6><span class="highlights-first">Unique</span><span>Style</span></h6>
+					<h6><a href="details1.html" target="_blank"><span class="highlights-first">Unique</span><span>Style</span></a></h6>
 				</div>	
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 highlights  animated-slide-bottom">
 					<div class="about-overlay-under text-center">
@@ -204,7 +203,7 @@
 							<i class="icon-ok"></i>
 						</div>
 					</div>
-					<h6><span class="highlights-first">Personal</span><span>Attention</span></h6>
+					<h6><a href="details1.html" target="_blank"><span class="highlights-first">Personal</span><span>Attention</span></a></h6>
 				</div>	
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 highlights animated-slide-right">
 					<div class="about-overlay-under text-center">
@@ -212,7 +211,7 @@
 							<i class="icon-ok"></i>
 						</div>
 					</div>
-					<h6><span class="highlights-first">Exceptional</span><span>Service</span></h6>
+					<h6><a href="details1.html" target="_blank"><span class="highlights-first">Exceptional</span><span>Service</span></a></h6>
 				</div>					
 			</div>
 			<!-- TESTIMONIALS -->
@@ -225,19 +224,19 @@
 								<li>	
 									<p class="testimonials-img"><img src="images/testimonials1.jpg" alt="img" /></p>                  
 									<p class="testimonials-quote text-center italic-text"><span>I think it's great and will be recommending it! I use a lot of themes, usually sticking with the same company to stay familiar with their setups, I thought I'd try this for a new project and it's great!</span>
-										<cite>&#8212; Jennifer Robinson, CEO, Sonic</cite>
+										<cite>&#8212; Shariba Islam Tusiy, CEO,DI</cite>
 									</p>											
 								</li>
 								<li>
 									<p class="testimonials-img"><img src="images/testimonials2.jpg" alt="img" /></p>
 									<p class="testimonials-quote text-center italic-text"><span>Your service from start to finish has been exemplary and on a professional, yet friendly level. I have been impressed with your approach. I have forwarded your name to potential clients.</span>							
-										<cite>&#8212; Andy Perry, Manager, CIF</cite>
+										<cite>&#8212; Lubna Jesmin Tithi, Manager, CIF</cite>
 									</p>																		
 								</li>
 								<li>
 									<p class="testimonials-img"><img src="images/testimonials3.jpg" alt="img" /></p>
 									<p class="testimonials-quote text-center italic-text"><span>I cannot thank you enough for your assistance  regarding an enquiry I made. It is so refreshing to receive a prompt and professional service.  I do wish you every success as you deserve it.</span>
-										<cite>&#8212; Kevin Evans, CEO, Freedom</cite>
+										<cite>&#8212;Naushin Sharmy, CEO, Freedom</cite>
 									</p>																	
 								</li>               
 							</ul>
@@ -273,16 +272,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="names text-center">								
-								<span class="uppercase name">Project Manager</span>
-								<h5 class="text-center colored-text uppercase">Nicole Smith</h5>
-								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>	
-							</div>							
+							<div class="names text-center">
+                            <span class="uppercase name">Employee 1</span>
+							  <h5 class="text-center colored-text uppercase">Shariba islam</h5>
+								<span>Handles Package 1 & 2 and also product #1,2,3.</span>	
+						  </div>							
 						</div>
 						<div class="col-xs-12 col-sm-4 col-lg-4 smxs-margin animated-scale-up">
 							<div class="block-inner">
 								<div class="team-img">
-									<img src="images/team2.jpg" alt="team" />
+									<img src="images/team2.png" alt="team" />
 									<div class="overlay-img text-center">
 										<div class="contact-icons">
 											<div class="contact-icons-inner">											
@@ -296,9 +295,9 @@
 								</div>
 							</div>	
 							<div class="names text-center">
-								<span class="uppercase name">Interior Designer</span>
+								<span class="uppercase name">Employee 2</span>
 								<h5 class="text-center colored-text uppercase">Jack Preach</h5>	
-								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>									
+								<span>Handles Package 3 and also product #4,5..</span>									
 							</div>							
 						</div>
 						<div class="col-xs-12 col-sm-4 col-lg-4 smxs-margin animated-slide-right">
@@ -318,9 +317,9 @@
 								</div>
 							</div>	
 							<div class="names text-center">
-								<span class="uppercase name">CAD Operator</span>
-								<h5 class="text-center colored-text uppercase">David Harper</h5>			
-								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>						
+								<span class="uppercase name">Employee 3</span>
+								<h5 class="text-center colored-text uppercase">tanjima prithy</h5>			
+								<span>Handles Package 4 and also product #5,6..</span>						
 							</div>							
 						</div>
 					</div>					
@@ -342,29 +341,29 @@
 					<div class="content green">					
 						<div class="service">
 							<div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 smxs-margin animated-slide-top">
-								<div class="service-icon colored-background"><i class="icon-pencil"></i></div>								
-								<h5 class="uppercase">Concept</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>								
+								<div class="service-icon colored-background"><a href="Dt.html"target="_blank"><i class="icon-pencil"></i></a></div>								
+								<h5 class="uppercase">Combo package 1</h5>
+								<p>package 1 contains those products.</p>								
 								<div class="service-description"></div>
 							</div>	
 							<div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 smxs-margin animated-slide-right">
 								<div class="service-icon colored-background"><i class="icon-picture"></i></div>
-								<h5 class="uppercase">Design</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>								
+								<h5 class="uppercase">Combo package 2</h5>
+								<p>package 2 contains those products..</p>								
 								<div class="service-description"></div>
 							</div>														
 						</div>									
 						<div class="service">
 							<div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 smxs-margin animated-slide-left">
 								<div class="service-icon colored-background"><i class="icon-cogs"></i></div>
-								<h5 class="uppercase">Construction</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>								
+								<h5 class="uppercase">Combo package 3</h5>
+								<p>package 3 contains those products..</p>								
 								<div class="service-description"></div>
 							</div>		
 							<div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 smxs-margin animated-slide-bottom">
 								<div class="service-icon colored-background"><i class="icon-building"></i></div>
-								<h5 class="uppercase">Installation</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>								
+								<h5 class="uppercase">Combo package 4</h5>
+								<p>package 4 contains those products..</p>								
 								<div class="service-description"></div>
 							</div>													
 						</div>																		
@@ -405,12 +404,12 @@
 						</ul>
 						<div class="tab-content col-lg-7 col-md-6 col-sm-7 col-xs-12 animated-scale-up">
 							<div class="tab-pane active" id="management">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								<p>.</p>
 								<ul>
-									<li><i class="icon-magic"></i> Lorem Ipsum</li>
-									<li><i class="icon-paper-clip"></i> Ullamco Laboris</li>
-									<li><i class="icon-legal"></i> Nostrud Exercitation</li>
-									<li><i class="icon-pencil"></i> Dolore Magna</li>
+									<li><i class="icon-magic"></i> .</li>
+									<li><i class="icon-paper-clip"></i> .</li>
+									<li><i class="icon-legal"></i> .</li>
+									<li><i class="icon-pencil"></i> .</li>
 								</ul>
 							</div>
 							<div class="tab-pane" id="plan">
@@ -522,19 +521,19 @@
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 smxs-margin animated-slide-top">																				
 						<h6 class="uppercase colored-text">Address</h6>
 						<p class="address">
-							Harbor Blvd
+							22/3,f-block
 							<br>
-							Costa Mesa, CA 92627
+							Mohammadpur, Dhaka-1207
 							<br>
-							United States
+							Bangladesh
 							<br>
-							<abbr title="Phone">P:</abbr>
+							<abbr title="Phone">Phone</abbr>
+							<span>+880 1689148320</span>
+							<br>
+							<abbr title="Fax">Fax</abbr>
 							<span>(123)456&#8209;7890</span>
 							<br>
-							<abbr title="Fax">F:</abbr>
-							<span>(123)456&#8209;7890</span>
-							<br>
-							e-mail: <a href="mailto:office@example.com">office@example.com</a>
+							e-mail: <a href="DIinfo@gmail.com">DIinfo@gmail.com</a>
 						</p>
 						<h6 class="uppercase colored-text">Socials</h6>
 						<div class="footer-icons">							
@@ -570,7 +569,7 @@
 						<img src="images/logo.png" alt="logo"/> 
 					</a>
 				</div>						
-				<div class="text-center col-xs-12 col-sm-12 col-md-8 col-lg-8 rights">@2013 Style Interior - All Rights Reserved - Web Design & Development by <a href="#">Style Interior</a></div>									
+				<div class="text-center col-xs-12 col-sm-12 col-md-8 col-lg-8 rights"><a href="#">D Interiors</a></div>									
 			</div>
 		</div>
 		<!-- END OF copyright -->
